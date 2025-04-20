@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Rick and Morthy</title>
+
+  
+  <!-- Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="main-container">
+
+    <!-- Título principal de la aplicación -->
+    <h1>
+      The Rick and Morthy API
+    </h1>
+
+    <!-- Formulario de búsqueda de personajes -->
+    <form id="search-form">
+      <div id="search-control-container">
+        <!-- Etiqueta para el campo de texto -->
+        <label for="search">Nombre personaje</label>
+
+        <!-- Campo para ingresar el nombre del personaje -->
+        <input id="search-input" name="search" type="text">
+      </div>
+
+      <!-- Botón para enviar la búsqueda -->
+      <button id="search-btn" type="submit">Buscar</button>
+    </form>
+
+    <!-- Contenedor donde se insertará el paginador dinámicamente -->
+    <div id="paginator-wrapper"></div>
+
+    <!-- Sección donde se mostrarán las tarjetas de los personajes -->
+    <section id="cards-container"></section>
+
+  </main>
+
+  <!-- Carga del archivo principal JavaScript como módulo -->
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+
+</html>
